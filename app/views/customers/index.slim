@@ -1,0 +1,25 @@
+.container.alert.alert-warning
+  p HINT: We have 100 customers seeded in DB by faker
+  p Here we can see customer's statistic with cashing by Redis for avoiding big quontity of DB queries.
+= link_to 'Customer statistics (analysis of hashed data)',
+ statistic_customers_path,
+ class: "button-old-primary"
+h1.mt-4 All customers
+table.table.table-bordered
+  thead
+    tr
+      th Name
+      th Age
+      th Email
+      th Country
+      th Balance
+  tbody
+    - @customers.each do |customer|
+      tr
+        td= customer.full_name
+        td= customer.age
+        td= customer.email
+        td= customer.country
+        td= customer.balance
+.pagination-centered
+  = will_paginate @customers, renderer: BootstrapPagination::Rails

@@ -1,0 +1,7 @@
+= simple_form_for @task, data: { turbo_frame: 'new_task' } do |f|
+  = f.input :name
+  = f.input :description
+  = f.datetime_field :due_date
+  .container.row
+    = f.button :submit, class: "btn btn-success mt-2"
+= link_to "See all tasks", tasks_path, class: "btn btn-primary mt-2"

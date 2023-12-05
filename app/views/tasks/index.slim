@@ -1,0 +1,29 @@
+.container.alert.alert-warning
+  p HINT: We are setting alert time and Sidekiq will send a mail 10 minutes before this.
+  p All tasks will be closed automatic in 24h after alert time.
+= link_to 'Create new task', new_task_path, class: "button-old-primary"
+h1.mt-4 All tasks
+- @tasks.each do |task|
+  .mt-4
+    .container.border.border-dark.rounded-3
+      .d-flex.justify-content-between.align-items-center
+        h3.mt-2 = task.name
+        - if task.status == "TO DO"
+          span.badge.bg-primary = task.status
+        - else
+          span.badge.bg-success = task.status
+      h5 = task.description
+      p Alert time: #{task.due_date.strftime("%d.%m.%Y %H:%M")}
+      .container.d-flex.justify-content-between.mb-2
+        .row
+          .col
+            = link_to 'Edit', "#", class: "button-old-primary ml-2 mb-4"
+          .col
+            - if task.status == "TO DO"
+              = link_to 'Close', mark_done_task_path(task), class: "button-old-primary button-success"
+            - else
+              = button_to "Open", mark_done_task_path(task), method: :post, class: "button-old-primary button-success"
+          .col
+            = button_to "Delete", task_path(task), method: :delete, class: "button-old-primary button-danger"
+.pagination-centered
+  = will_paginate @collection, renderer: BootstrapPagination::Rails

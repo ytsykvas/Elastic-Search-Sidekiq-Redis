@@ -1,0 +1,36 @@
+h1 Customer`s statistic
+h4.mt-5 Length of customer`s names
+table.table.table-bordered
+  thead
+    tr
+      th Name
+      th Length
+  tbody
+    - @statistic[:longest_names].each do |name, length|
+      tr
+        td= name
+        td= length
+
+h4.mt-5 The most popular customer`s countries
+table.table.table-bordered
+  thead
+    tr
+      th Country
+      th Count
+  tbody
+    - @statistic[:popular_countries].each do |country, count|
+      tr
+        td= country
+        td= count
+
+h4.mt-5 The richest customers
+table.table.table-bordered
+  thead
+    tr
+      th Name
+      th Balance
+  tbody
+    - @statistic[:richest_customers].each do |customer|
+      tr
+        td= customer.keys.join
+        td= customer.values.join

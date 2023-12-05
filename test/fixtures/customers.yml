@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  full_name: MyString
+  age: 1
+  email: MyString
+  country: MyString
+  balance: 9.99
+
+two:
+  full_name: MyString
+  age: 1
+  email: MyString
+  country: MyString
+  balance: 9.99

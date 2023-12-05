@@ -1,0 +1,5 @@
+WeatherWorker:
+  cron: '0 12 * * *'
+  class: 'WeatherWorker'
+  queue: 'default'
+  args: []

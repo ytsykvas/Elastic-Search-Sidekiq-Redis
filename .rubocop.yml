@@ -1,0 +1,8 @@
+AllCops:
+  Exclude:
+    - 'redis-stable/**/*'
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'db/schema.rb'
+Style/Documentation:
+  Enabled: false

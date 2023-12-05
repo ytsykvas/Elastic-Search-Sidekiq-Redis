@@ -1,0 +1,19 @@
+.container.alert.alert-warning
+  p HINT: We fetch weather in Lviv, Ukraine every day and store it in database.
+  p We use REST API and Sidekiq + CRON for requests.
+table.table.table-bordered
+  thead
+    tr
+      th Date
+      th Current Temperature
+      th Temperature Last Year
+      th Temperature Difference
+  tbody
+    - @weathers.each do |weather|
+      tr
+        td= weather.current_date
+        td= weather.current_temperature
+        td= weather.temperature_last_year
+        td= weather.temperature_difference
+.pagination-centered
+  = will_paginate @weathers, renderer: BootstrapPagination::Rails
