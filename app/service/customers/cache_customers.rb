@@ -1,4 +1,3 @@
-# /home/tsykvas/study/SidekiqTasks/app/service/customers/cache_customers.rb
 # frozen_string_literal: true
 
 module Customers
@@ -17,7 +16,6 @@ module Customers
       else
         puts 'Cache hit. Loading customers from the cache.'
       end
-
       cached_customers
     end
   end
