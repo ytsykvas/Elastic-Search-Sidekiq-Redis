@@ -1,7 +1,8 @@
+# /home/tsykvas/study/SidekiqTasks/app/service/customers/cache_customers.rb
 # frozen_string_literal: true
 
 module Customers
-  class cached_customers
+  class CacheCustomers
     def initialize
       @cache_key = 'customers_cache_key'
     end
@@ -15,7 +16,6 @@ module Customers
         Rails.cache.write(@cache_key, cached_customers, expires_in: 1.hour)
       else
         puts 'Cache hit. Loading customers from the cache.'
-        cached_customers = JSON.parse(cached_customers)
       end
 
       cached_customers
