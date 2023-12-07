@@ -14,5 +14,7 @@ I used:
 7) gem "faker" for seeding DB
 8) Redis for cashing data
 9) used gem "rubocop" as a linter
+9) used gem "rubocop" as a linter
+
 
 Some files that are normally ignored in GIT will not be ignored for the sake of clarity.
