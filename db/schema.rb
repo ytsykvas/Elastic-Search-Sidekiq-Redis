@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -12,35 +10,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 20_231_204_154_603) do
+ActiveRecord::Schema[7.1].define(version: 2023_12_14_132002) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension 'plpgsql'
+  enable_extension "plpgsql"
 
-  create_table 'customers', force: :cascade do |t|
-    t.string 'full_name', null: false
-    t.integer 'age', null: false
-    t.string 'email', null: false
-    t.string 'country', null: false
-    t.decimal 'balance', null: false
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
+  create_table "books", force: :cascade do |t|
+    t.string "title"
+    t.string "author"
+    t.integer "published_year"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table 'tasks', force: :cascade do |t|
-    t.string 'name', null: false
-    t.text 'description'
-    t.datetime 'due_date'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.string 'status', default: 'TO DO', null: false
+  create_table "customers", force: :cascade do |t|
+    t.string "full_name", null: false
+    t.integer "age", null: false
+    t.string "email", null: false
+    t.string "country", null: false
+    t.decimal "balance", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table 'weathers', force: :cascade do |t|
-    t.date 'current_date'
-    t.decimal 'current_temperature', precision: 3, scale: 1
-    t.decimal 'temperature_last_year', precision: 3, scale: 1
-    t.decimal 'temperature_difference', precision: 3, scale: 1
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
+  create_table "tasks", force: :cascade do |t|
+    t.string "name", null: false
+    t.text "description"
+    t.datetime "due_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "status", default: "TO DO", null: false
   end
+
+  create_table "weathers", force: :cascade do |t|
+    t.date "current_date"
+    t.decimal "current_temperature", precision: 3, scale: 1
+    t.decimal "temperature_last_year", precision: 3, scale: 1
+    t.decimal "temperature_difference", precision: 3, scale: 1
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end
