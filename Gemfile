@@ -14,18 +14,31 @@ gem 'sprockets-rails'
 gem 'pg', '~> 1.1'
 
 gem 'actionmailer'
+
 gem 'bootstrap'
+
 gem 'dotenv'
+
 gem 'faker', '~> 3.2'
+
 gem 'rest-client'
+
 gem 'sassc'
+
 gem 'sassc-rails'
+
 gem 'sidekiq'
+
 gem 'sidekiq-cron'
+
 gem 'sidekiq-scheduler'
+
 gem 'simple_form'
+
 gem 'slim-rails'
+
 gem 'will_paginate'
+
 gem 'will_paginate-bootstrap'
 
 # Use the Puma web server [https://github.com/puma/puma]
@@ -66,7 +79,9 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
+
   gem 'elasticsearch-model'
+
   gem 'elasticsearch-rails'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]

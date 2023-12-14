@@ -1,15 +1,19 @@
                                   Prefix Verb   URI Pattern                                                                                       Controller#Action
-                      rails_health_check GET    /up(.:format)                                                                                     rails/health#show
                                     root GET    /                                                                                                 dashboard#index
+                      rails_health_check GET    /up(.:format)                                                                                     rails/health#show
+                           weather_index GET    /weather(.:format)                                                                                weather#index
+                                   books GET    /books(.:format)                                                                                  books#index
+                     statistic_customers GET    /customers/statistic(.:format)                                                                    customers#statistic
+                               customers GET    /customers(.:format)                                                                              customers#index
                           mark_done_task POST   /tasks/:id/mark_done(.:format)                                                                    tasks#mark_done
                                    tasks GET    /tasks(.:format)                                                                                  tasks#index
                                          POST   /tasks(.:format)                                                                                  tasks#create
                                 new_task GET    /tasks/new(.:format)                                                                              tasks#new
-                               edit_task GET    /tasks/:id/edit(.:format)                                                                         tasks#edit
                                     task GET    /tasks/:id(.:format)                                                                              tasks#show
                                          PATCH  /tasks/:id(.:format)                                                                              tasks#update
                                          PUT    /tasks/:id(.:format)                                                                              tasks#update
                                          DELETE /tasks/:id(.:format)                                                                              tasks#destroy
+                             sidekiq_web        /sidekiq                                                                                          Sidekiq::Web
            rails_postmark_inbound_emails POST   /rails/action_mailbox/postmark/inbound_emails(.:format)                                           action_mailbox/ingresses/postmark/inbound_emails#create
               rails_relay_inbound_emails POST   /rails/action_mailbox/relay/inbound_emails(.:format)                                              action_mailbox/ingresses/relay/inbound_emails#create
            rails_sendgrid_inbound_emails POST   /rails/action_mailbox/sendgrid/inbound_emails(.:format)                                           action_mailbox/ingresses/sendgrid/inbound_emails#create

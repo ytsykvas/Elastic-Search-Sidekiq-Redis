@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc987485-490f-4fa1-8b58-8e83a92be7b6" name="Changes" comment="" />
+    <list default="true" id="fc987485-490f-4fa1-8b58-8e83a92be7b6" name="Changes" comment="Prepared all for elastic search realization">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,8 +31,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/tsykvas/WORK/SMM&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/tsykvas/study/CodeAdvent&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -153,7 +155,54 @@
       <workItem from="1701385487962" duration="54000" />
       <workItem from="1701706840647" duration="4000" />
       <workItem from="1701804739435" duration="29000" />
+      <workItem from="1702059722431" duration="627000" />
+      <workItem from="1702061603785" duration="24000" />
+      <workItem from="1702061636459" duration="464000" />
+      <workItem from="1702475872880" duration="817000" />
+      <workItem from="1702478127838" duration="10000" />
+      <workItem from="1702556106169" duration="9202000" />
     </task>
+    <task id="LOCAL-00001" summary="Separators">
+      <option name="closed" value="true" />
+      <created>1702560974462</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702560974462</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Navbar change">
+      <option name="closed" value="true" />
+      <created>1702560991920</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702560991920</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Books model created">
+      <option name="closed" value="true" />
+      <created>1702561029992</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702561029992</updated>
+    </task>
+    <task id="LOCAL-00004" summary="elasticsearch gems">
+      <option name="closed" value="true" />
+      <created>1702567427585</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702567427585</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Prepared all for elastic search realization">
+      <option name="closed" value="true" />
+      <created>1702583249622</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702583249622</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,5 +210,13 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Separators" />
+    <MESSAGE value="Navbar change" />
+    <MESSAGE value="Books model created" />
+    <MESSAGE value="elasticsearch gems" />
+    <MESSAGE value="Prepared all for elastic search realization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepared all for elastic search realization" />
   </component>
 </project>
