@@ -7,7 +7,12 @@ Rails.application.routes.draw do
   get 'up' => 'rails/health#show', as: :rails_health_check
 
   resources :weather, only: [:index]
-  resources :books, only: [:index]
+  resources :books do
+    collection do
+      get 'search'
+    end
+  end
+  # resources :books, only: [:index]
   resources :customers, only: [:index, :statistic] do
     collection do
       get 'statistic'

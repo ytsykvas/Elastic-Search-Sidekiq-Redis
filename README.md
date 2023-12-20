@@ -15,5 +15,6 @@ I used:
 8) Redis for cashing data
 9) used gem "rubocop" as a linter
 9) gem 'dotenv' for storing API keys
+10) Elastic Search for fast searching books
 
 Some files that are normally ignored in GIT will not be ignored for the sake of clarity.

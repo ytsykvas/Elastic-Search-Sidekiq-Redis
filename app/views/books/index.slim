@@ -1,15 +1,15 @@
 .container.alert.alert-warning
-  p HINT: We have books on our shalves
-  p Here is realized a elastic search of some phrases in book`s excerpt
+  p HINT:
+  p Here is realized a elastic search of some phrases in book`s data
+  P Write what you want to search and push ENTER (Author, Title or description)
 .container
-  .btn-toolbar.mb-3
+  .btn-toolbar.justify-content-md-center
     .row.mt-3
       .col
-        = simple_form_for :search, url: books_path, method: :get do |f|
+        = simple_form_for :search, url: search_books_path, method: :get do |f|
           = f.input :query, label: false, input_html: { class: 'form-control', placeholder: 'Search books...' }
-      .col
-        = link_to 'Search phrase/word or text', "#", class: "button-old-primary"
-h1.mt-4 All books
+          = f.button :submit, class: 'button-old-primary', style: 'display: none'
+h1.mt-2 All books
 table.table.table-bordered
   thead
     tr
@@ -17,7 +17,7 @@ table.table.table-bordered
       th Author
       th Year
   tbody
-    - @books.each do |book|
+    - @books&.each do |book|
       tr
         td= book.title
         td= book.author

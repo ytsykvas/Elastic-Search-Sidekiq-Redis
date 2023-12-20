@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc987485-490f-4fa1-8b58-8e83a92be7b6" name="Changes" comment="Prepared all for elastic search realization">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="fc987485-490f-4fa1-8b58-8e83a92be7b6" name="Changes" comment="Elastic Search for books">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -161,6 +166,9 @@
       <workItem from="1702475872880" duration="817000" />
       <workItem from="1702478127838" duration="10000" />
       <workItem from="1702556106169" duration="9202000" />
+      <workItem from="1702645646874" duration="2867000" />
+      <workItem from="1702819012346" duration="2000" />
+      <workItem from="1703078265030" duration="4737000" />
     </task>
     <task id="LOCAL-00001" summary="Separators">
       <option name="closed" value="true" />
@@ -202,7 +210,31 @@
       <option name="project" value="LOCAL" />
       <updated>1702583249622</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Prepared all for elastic search realization">
+      <option name="closed" value="true" />
+      <created>1702645709712</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702645709712</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Elastic Search for books">
+      <option name="closed" value="true" />
+      <created>1703083883716</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703083883716</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Elastic Search for books">
+      <option name="closed" value="true" />
+      <created>1703084263847</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703084263847</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +249,7 @@
     <MESSAGE value="Books model created" />
     <MESSAGE value="elasticsearch gems" />
     <MESSAGE value="Prepared all for elastic search realization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prepared all for elastic search realization" />
+    <MESSAGE value="Elastic Search for books" />
+    <option name="LAST_COMMIT_MESSAGE" value="Elastic Search for books" />
   </component>
 </project>
